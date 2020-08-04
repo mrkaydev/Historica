@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Historica</string>
+    <string name="title_activity_news_web_view">Post</string>
+</resources>

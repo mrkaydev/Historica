@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/videoWebView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </WebView>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/pb"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_x="138dp"
+            android:layout_y="106dp"
+            app:SpinKit_Color="#FBC02D"
+            app:layout_constraintBottom_toBottomOf="@+id/videoWebView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/videoWebView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

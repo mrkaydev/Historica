@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglr"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/pic_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/man"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/female_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/hintTextColor"
+        android:fontFamily="@font/acme"
+        android:text="Female"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic_imageview" />
+
+    <CheckBox
+        android:id="@+id/male_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/hintTextColor"
+        android:checked="true"
+        android:fontFamily="@font/acme"
+        android:text="Male"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic_imageview" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/textColor"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawableRight="@drawable/mandatory"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColor"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/md"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/enterpass_edittext"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:fontFamily="@font/acme"
+            android:hint="Password (Minimum 6 Character)"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/hintTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/fullname_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/textColor"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawableRight="@drawable/mandatory"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/md" />
+
+    <EditText
+        android:id="@+id/profession_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/textColor"
+        android:drawableLeft="@drawable/ic_domain_black_24dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Profession"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_edittext" />
+
+    <EditText
+        android:id="@+id/workplace_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/textColor"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profession_edittext" />
+
+    <EditText
+        android:id="@+id/phone_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/textColor"
+        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+        android:drawableRight="@drawable/mandatory"
+        android:ems="12"
+        android:fontFamily="@font/acme"
+        android:hint="Phone (with country code)"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workplace_edittext" />
+
+    <EditText
+        android:id="@+id/twitter_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/textColor"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Nickname"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_edittext" />
+
+    <Button
+        android:id="@+id/register_button"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/acme"
+        android:text="Register"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twitter_edittext" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_button"
+        app:srcCompat="@drawable/mandatory" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="@font/acme"
+        android:text="Mandatory Field's"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_button">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

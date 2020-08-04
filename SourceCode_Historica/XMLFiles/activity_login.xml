@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglr"
+    tools:context=".Login">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:backgroundTint="#FFFFFF"
+        android:outlineAmbientShadowColor="#d3d3d3"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="#1976D2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/acme"
+                android:text="Login"
+                android:textColor="#FFCC00"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:textColorHint="#c5c5c5">
+
+            <EditText
+                android:id="@+id/emailogin_edittext"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#1E1F22"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:ems="12"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="#1E1F22"
+                android:textColorHint="#1E1F22"
+                app:helperText="Your email address" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="140dp"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#c5c5c5">
+
+            <EditText
+                android:id="@+id/password_edittext"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#1E1F22"
+                android:ems="12"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="#1E1F22"
+                android:textColorHint="#1E1F22"
+                app:helperText="your email address" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bt_shape"
+            android:fontFamily="@font/acme"
+            android:text="login"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/register_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/acme"
+            android:text="Register"
+            android:textColor="#1E1F22"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/logo_imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
